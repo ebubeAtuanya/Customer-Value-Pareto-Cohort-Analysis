@@ -88,3 +88,15 @@ ORDER BY segment,first_order_date,month_number;
 SELECT *
 FROM vw_cohort_retention_all
 LIMIT 10;
+
+-- HOW MANY CUSTOMERS THAT WAS ACQUIRED
+-- DISCOVERY: EXPLAINS WHY THEY DID NOT RETURN IN MONTH 1,
+-- THEY ARE B2B CUSTOMERS, NOT AT RISK OF CHURNING BECAUSE THEY KEEP COMING BACK JUST LIKE IN MONTH 2
+-- AND GENERATED A REVENUE OF 107% MORE THAN THE FIRST MONTH THEY PURCHASE
+SELECT 
+    first_order_date,
+    cohort_size
+FROM vw_cohort_retention_all
+WHERE segment = 'VIP(TOP 20%)'
+  AND month_number = 0
+  AND first_order_date = '2010-12-01';

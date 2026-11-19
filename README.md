@@ -1,5 +1,5 @@
 ## PROJECT NAME: PARETO AND COHORT RETENTION REPORT 
-## DATA SOURCE: KAGGLE(ONLINE RETAIL DATASET)
+**DATA SOURCE: KAGGLE(ONLINE RETAIL DATASET)**
 
 ## EXECUTIVE SUMMARY
 Management tracked overall company sales across its online retail catalog but lacked visibility into which customers drove that revenue,
@@ -7,6 +7,8 @@ their purchase behavior and where churn risk was highest. A combined pareto and 
 registered buyers generate 77.17% of total revenue, driven by bulk ordering(372.86) and high repeat frequency rather than higher unit prices.
 Also, cohort tracking exposed a sharp behavioral divide, Top 20% buyers return after their first purchase and restock every other month then peak at Q4
 while bottom 80% drop 14.37% revenue retention on Average after their first order and behave largely as occasional seasonal buyers.
+
+![Power BI Page 1: Pareto & Unit Economics](https://github.com/ebubeAtuanya/Customer-Value-Pareto-Cohort-Analysis/blob/main/images/bottom80revenuepct.png)
 
 ## METHODOLOGY AND DATA NOTES
 **Data Cleaning & Segmentation ('MySQL 8.0')**
@@ -39,8 +41,14 @@ while bottom 80% drop 14.37% revenue retention on Average after their first orde
 Pareto analysis revealed that the segmented registered Top 20% of buyers generate 77.17% of the revenue while the bottom 80% buyers generate only 22.83% of the total revenue.
 Comparing the unit economic KPIs visible on the dashboard reveals what drives the revenue gap:
 
-![Power BI Page 1: Pareto & Unit Economics](images/top20unit_ecomics.png)
-![Power BI Page 1: Pareto & Unit Economics](images/bottom80unit_economics.png)
+**Top 20% of registered buyers unit economics image below.**
+
+![Power BI Page 1: Pareto & Unit Economics](https://github.com/ebubeAtuanya/Customer-Value-Pareto-Cohort-Analysis/blob/main/images/top20%20unit_ecomics.png)
+
+
+**Bottom 80% of registered buyers unit economics image below.**
+
+![Power BI Page 1: Pareto & Unit Economics](https://github.com/ebubeAtuanya/Customer-Value-Pareto-Cohort-Analysis/blob/main/images/bottom80%20unit_economics.png)
 
 
 
@@ -57,6 +65,8 @@ Comparing the unit economic KPIs visible on the dashboard reveals what drives th
    **Note: Cohort retention analysis( measured via unweighted average revenue retention from Month 1 to Month 12)highlights two distinct customer lifecycles:**
    
 **Quarterly Restocking Cycles:** The analysis revealed a sharp behavioral divide between the segments(Top 20% and  Bottom 80%).
+
+![Power BI Page 1: Pareto & Unit Economics](https://github.com/ebubeAtuanya/Customer-Value-Pareto-Cohort-Analysis/blob/main/images/Top20%RevenueRetention.png)
 
 **. Top 20% cohorts** retained 39.46% initial unweighted revenue retention average in Month 1 and hit a strong replenishment peak at Month 3(59.91%) while the Month 6 Average drops to 30.04%, partially down
      by small late stage cohorts(Dec 2010 at 0%) and the partial month December 2011 cutoff(June 2011 at 2.1%). Retention rebounds to 44.19% at month 12 during annual   restocking.

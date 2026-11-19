@@ -8,7 +8,13 @@ registered buyers generate 77.17% of total revenue, driven by bulk ordering(372.
 Also, cohort tracking exposed a sharp behavioral divide, Top 20% buyers return after their first purchase and restock every other month then peak at Q4
 while bottom 80% drop 14.37% revenue retention on Average after their first order and behave largely as occasional seasonal buyers.
 
-![Power BI Page 1: Pareto & Unit Economics](https://github.com/ebubeAtuanya/Customer-Value-Pareto-Cohort-Analysis/blob/main/images/bottom80revenuepct.png)
+**Top 20% registered buyers total revenue percentage**
+
+![Power BI Page 1: Pareto & Unit Economics](https://github.com/ebubeAtuanya/Customer-Value-Pareto-Cohort-Analysis/blob/main/images/Top20%20revenuepct.png)
+
+**Bottom 80% registered buyers total revenue percentage**
+
+![Power BI Page 1: Pareto & Unit Economics](https://github.com/ebubeAtuanya/Customer-Value-Pareto-Cohort-Analysis/blob/main/images/bottom80%20revenuepct.png)
 
 ## METHODOLOGY AND DATA NOTES
 **Data Cleaning & Segmentation ('MySQL 8.0')**
@@ -66,7 +72,9 @@ Comparing the unit economic KPIs visible on the dashboard reveals what drives th
    
 **Quarterly Restocking Cycles:** The analysis revealed a sharp behavioral divide between the segments(Top 20% and  Bottom 80%).
 
-![Power BI Page 1: Pareto & Unit Economics](https://github.com/ebubeAtuanya/Customer-Value-Pareto-Cohort-Analysis/blob/main/images/Top20%RevenueRetention.png)
+**TOP 20% UNWEIGHTED AVERAGE REVENUE AND COHORT CHART SHOWING DEC 2010 CUTOFF**
+
+![Power BI Page 2: Pareto & Unit Economics](https://github.com/ebubeAtuanya/Customer-Value-Pareto-Cohort-Analysis/blob/main/images/Top20_RevenueRetention.png)
 
 **. Top 20% cohorts** retained 39.46% initial unweighted revenue retention average in Month 1 and hit a strong replenishment peak at Month 3(59.91%) while the Month 6 Average drops to 30.04%, partially down
      by small late stage cohorts(Dec 2010 at 0%) and the partial month December 2011 cutoff(June 2011 at 2.1%). Retention rebounds to 44.19% at month 12 during annual   restocking.
@@ -75,8 +83,12 @@ Comparing the unit economic KPIs visible on the dashboard reveals what drives th
      Beyond the December 2009 cohort rebounding to 97.7% in month 11(Nov 2010), newer 2011 cohorts exceeded their initial month spend (324.7% in October 2011 and 1222.5% in
      December 2011 despite only 9 active days recored in December.
 
+**BOTTOM 80% BUYERS UNWEIGHTED REVENUEE AVERAGE AND COHORT CHART**
+
+![Power BI Page 2: Pareto & Unit Economics](https://github.com/ebubeAtuanya/Customer-Value-Pareto-Cohort-Analysis/blob/main/images/bottom80_RetentionRevenue.png)
+
 **Bottom 80% Buyers:Steep Post-Purchase Drop-Off:**
-  
+
 **.  Immediate Churn Risk:** Bottom 80% cohorts drops immediately to 14.37% unweighted average revenue retention in Month 1, hold flat at 14.51% in Month 3 and drops to   11.26% in Month 6 and 10.09% month 12.
 
 **.  Occasional Seasonal Activity:** Rather than replenishing regularly, bottom 80% buyers heavy drop off after first purchase and only re-engage 
